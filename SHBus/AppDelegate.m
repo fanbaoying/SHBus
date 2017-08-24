@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,24 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+
+    ViewController *vc = [[ViewController alloc]init];
+
+    UINavigationController *nav1 = [[UINavigationController alloc]initWithRootViewController:vc];
+    
+    //选中与未被选中图片的渲染
+//    nav1.tabBarItem.title = @"掌上智付";
+//    //    nav1.tabBarItem.image = [UIImage imageNamed:@"TAG.jpg"];
+//    nav1.tabBarItem.image = [[UIImage imageNamed:@"first@2x"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+//    nav1.tabBarItem.selectedImage = [[UIImage imageNamed:@"firsts@2x"]imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+
+    //隐藏导航栏
+    nav1.navigationBarHidden = YES;
+    
+    self.window.rootViewController = nav1;
+    
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

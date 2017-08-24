@@ -1,0 +1,26 @@
+//
+//  PrefixHeader.pch
+//  SHBus
+//
+//  Created by 范保莹 on 2017/6/8.
+//  Copyright © 2017年 agreePay. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+
+//#define navColor [UIColor colorWithRed:71/255.0 green:79/255.0 blue:117/255.0 alpha:1]
+#define navColor [UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1]
+#define ALLTextColor [UIColor colorWithRed:89/255.0 green:99/255.0 blue:104/255.0 alpha:1]
+#define ALLText1Color [UIColor colorWithRed:181 /255.0 green:188/255.0 blue:192/255.0 alpha:1];
+#define ALLBGColor [UIColor colorWithRed:181 /255.0 green:188/255.0 blue:192/255.0 alpha:0.5];
+
+//#define Handler @"http://61.129.57.72:8181/interface/Handler.ashx?action=getgpsdata&roadline="
+
+#define Handler @"http://bus.ark930.wang:8600/bus/"
+
+
+#endif /* PrefixHeader_pch */
